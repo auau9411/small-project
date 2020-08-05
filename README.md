@@ -1,3 +1,2 @@
 # small-project
-### colcade exapmle<br>
-[demo](https://cocade-example.netlify.app)
+### colcade exapmle [demo](https://cocade-example.netlify.app)
