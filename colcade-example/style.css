@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+header {
+  text-align: center;
+  margin: 3rem .6rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
+}
+
+header p span {
+  cursor: pointer;
+  background-color: #cce475;
+  padding: 1px 4px 2px 4px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header p span a {
+  text-decoration: none;
+  color: black;
+}
+
+header p span:hover {
+  background-color: rgba(204, 228, 117, 0.6);
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10%;
+}
+
+.grid .grid-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 2px;
+}
+
+.grid .grid-item {
+  position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.grid .grid-item img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.grid .grid-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 4px);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-clip-path: circle(0% at 0 0);
+          clip-path: circle(0% at 0 0);
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.grid .grid-item:hover::before {
+  -webkit-clip-path: circle(300% at 0 0);
+          clip-path: circle(300% at 0 0);
+}
+
+.grid .grid-item:hover {
+  -webkit-transform: translate(-3%, -5%);
+          transform: translate(-3%, -5%);
+}
+
+.grid .grid-item:hover img {
+  -webkit-box-shadow: 8px 8px 4px #9e9e9e;
+          box-shadow: 8px 8px 4px #9e9e9e;
+}
+
+@media screen and (max-width: 1080px) {
+  .grid-col--4 {
+    display: none;
+  }
+  .grid {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-col--3 {
+    display: none;
+  }
+  .grid {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid-col--2 {
+    display: none;
+  }
+  .grid {
+    padding: 0;
+  }
+  .grid .grid-col {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
