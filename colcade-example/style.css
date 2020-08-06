@@ -88,11 +88,6 @@ header p span:hover {
           transform: translate(-3%, -5%);
 }
 
-.grid .grid-item:hover img {
-  -webkit-box-shadow: 8px 8px 4px #9e9e9e;
-          box-shadow: 8px 8px 4px #9e9e9e;
-}
-
 @media screen and (max-width: 1080px) {
   .grid-col--4 {
     display: none;
