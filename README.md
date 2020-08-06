@@ -1,4 +1,4 @@
 # small-project
 ### colcade example <br>
-colcade.js를 이용한 반응형 갤러리<br>
+responsive gallery using colcade.js<br>
 [demo](https://colcade-example.netlify.app/)
